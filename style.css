@@ -19,7 +19,8 @@ header h1{
 .data{
   position: absolute;
   top:20px;
-  left: 62%;
+  width: 100px;
+  left: 85%;
   
   padding: 5px;
 
@@ -29,13 +30,14 @@ header h1{
   position: absolute;
 }
 .horas{
-  
-  position: relative
+  position: relative;
+
 }
   .amd{
-    left: 80%;
+    left: 90%;
     position: absolute;
   text-decoration: underline;
+
 }
 
 

@@ -32,46 +32,27 @@
                               data = new Date();
 
                               ano = data.getFullYear();
-                              mes = data.getMonth();
+                              mes = data.getMonth() + 1;
                               dia = data.getDate();
                               ho = data.getHours();
                               mi = data.getMinutes();
                               seg = data.getSeconds();
 
-                              if ( ho <= 9) {
-                                    hora1 = "0";
-                              } else {
-                                    hora1 = "";
-                              }
 
-                              if (mi == 0 || mi <= 9) {
-                                    min1 = "0";
-                              } else {
-                                    min1 = "";
-                              }
-
-                              if (seg == 0 || seg <= 9) {
-                                    seg1 = "0";
-                              } else {
-                                    seg1 = "";
-                              }
 
                               document.querySelector("#data").innerHTML =
                                     '<span class="horas">' +
-                                    hora1 +
-                                    ho +
+                                    ho.toString().padStart(2, '0') +
                                     ":" +
-                                    min1 +
-                                    mi +
+                                    mi.toString().padStart(2, '0') +
                                     ":" +
-                                    seg1 +
-                                    seg +
+                                    seg.toString().padStart(2, '0') +
                                     '</span>  <span  class="amd"> ' +
-                                    dia +
+                                    dia.toString().padStart(2, '0') +
                                     "/" +
-                                    mes +
+                                    mes.toString().padStart(2, '0') +
                                     "/" +
-                                    ano +
+                                    ano.toString().padStart(2, '0') +
                                     "</span>";
                               setTimeout("time()", 500);
                         }
@@ -157,7 +138,7 @@
                                     --x2: 0;
                                     --y2: -1;
                               ">
-                              <a href="https://youtube.com/@gabrielmarques6854?si=-HE0CVyz0SrZ1tf-">youtube</a></span>
+                              <a href="https://www.youtube.com/@BIEL_MARQUES_02">youtube</a></span>
                         <span style="
                                     --i: 0;
                                     --d: 3;
