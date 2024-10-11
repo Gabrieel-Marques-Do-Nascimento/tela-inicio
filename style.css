@@ -123,7 +123,7 @@ display: flex;
 
   width: 2em;
   height: 2em;
-  background: blue url('/inicio_files/terral.jpg');
+  background: blue url('./inicio_files/terral.jpg');
   background-size: 190px;
   border-radius: 50%;
   animation-name: move,scale,rotate;
