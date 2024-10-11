@@ -1,0 +1,219 @@
+
+/* celular*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  height: 94vh;
+  width: 96vw;
+  padding: 15px;
+    font-size: 15pt;
+    background: black;
+    color: white;
+}
+header h1{
+  margin: 0 0 20px 0;
+}
+.data{
+  position: absolute;
+  top:20px;
+  left: 62%;
+  
+  padding: 5px;
+
+}
+  header span{
+    
+  position: absolute;
+}
+.horas{
+  
+  position: relative
+}
+  .amd{
+    left: 80%;
+    position: absolute;
+  text-decoration: underline;
+}
+
+
+
+.pesquisa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 95%;
+  height: 45px;
+  margin: 0 auto 15px auto ;
+  border-radius:20px;
+  
+}
+
+input[type="search"]{
+ font-size: 20px;
+  background: none;
+  border: none;
+  width: 90%;
+  height: 40px;
+  position: relative;
+  
+  
+  padding: 5px 5px 5px 15px ;
+  
+}
+input[type="search"]:focus{
+  background: none;
+  outline: none;
+}
+input:focus ~ button{
+  position: relative;
+  
+}
+a.pesquisar{
+  background: none;
+}
+& img{
+  height: 30px
+}
+
+
+
+nav{
+display: flex;
+  position: absolute;
+  left: 0;
+}
+.close{
+  left: 0;
+  bottom: 320px;
+}
+
+
+.container{
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 60px;
+}
+.sol{
+  position: relative;
+  align-self: start;
+  width:10em;
+  height: 10em;
+
+  background: radial-gradient(circle, #ffcc00, #ff9900, #ff6600);
+  border-radius: 50%;
+  box-shadow: 0 0 100px 30px rgba(255, 204, 0, 0.5), /* Halo solar */
+  0 0 300px 100px rgba(255, 165, 0, 0.2); /* Efeito de brilho distante */
+  z-index: 1;
+  animation: pulsate 5s infinite alternate; /* Animação de pulso do sol */
+}
+
+ .terra{
+   position: relative;
+   align-self: self-start;
+    top: 80px;
+    right: 300px;
+
+  width: 2em;
+  height: 2em;
+  background: blue url('/inicio_files/terral.jpg');
+  background-size: 190px;
+  border-radius: 50%;
+  animation-name: move,scale,rotate;
+  animation-duration: 3s,3s,3s;
+  animation-iteration-count: infinite,infinite,infinite;
+  animation-timing-function: ease-in-out,linear,linear;
+  
+}
+.lua{
+  position: relative
+}
+@keyframes move {
+  0%{right: 350px ;}
+  65%{right: -100px;
+  }
+  100%{right: 350px ;}
+}
+
+
+
+
+@keyframes rotate {
+  0%{background-position: 0;}
+  100%{background-position: 190px;}
+}
+@keyframes scale {
+  0%{transform: scale(1) ; }
+  
+  32%{transform: scale(0.4);z-index: 0; animation-timing-function: ease-in }
+  70%{transform: scale(1) ;z-index: 2; animation-timing-function: ease-in }
+   75%{transform: scale(1.2); animation-timing-function: ease-in-out}
+  86%{transform: scale(2) ;  }
+  98%{transform: scale(1.2)}
+  100%{transform: scale(1) ; }
+  
+}
+/*
+@keyframes scale{ /* diminui e aumenta a proporção da div z-index fas o efeito de sobreposiçao 
+  0%{transform: scale(1); z-index: 0}
+  32%{transform: scale(0.4); animation-timing-function: ease-in}
+  70%{transform: scale(1); animation-timing-function: ease-in}
+  75%{transform: scale(1.2); animation-timing-function: ease-in-out}
+  86%{transform: scale(2); z-index: 2}
+  98%{transform: scale(1.2);}
+  100%{transform:scale(1);}
+}
+*/
+
+
+.carregar{
+  z-index: 3;
+  font-size: 2em;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  animation: hello 1.7s linear;
+  transform: translate(-50%,-50%);
+  & h1{
+  text-align: center;
+  
+}
+}
+
+@keyframes hello {
+  10%{
+    opacity: .5;
+    
+  }
+  50%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 0;
+  }
+}
+
+
+
+/* Animação de pulsar */
+@keyframes pulsate {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 0 100px 30px rgba(255, 204, 0, 0.5),
+                  0 0 300px 100px rgba(255, 165, 0, 0.2);
+  }
+  100% {
+      transform: scale(1.05);
+      box-shadow: 0 0 120px 35px rgba(255, 204, 0, 0.7),
+                  0 0 350px 120px rgba(255, 165, 0, 0.3);
+  }
+}
+
