@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Itens</title>
+</head>
+<body>
+    <h1>Adicionar Item</h1>
+    <form id="addItemForm">
+        <label for="itemName">Nome do Item:</label>
+        <input type="text" id="itemName" name="itemName" required><br>
+
+        <label for="itemLink">Link do Item:</label>
+        <input type="url" id="itemLink" name="itemLink" required><br>
+
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Seus Itens</h2>
+    <ul id="itemList">
+        <!-- Itens serão listados aqui -->
+    </ul>
+
+    <script src="static\app.js"></script>
+</body>
+</html>
