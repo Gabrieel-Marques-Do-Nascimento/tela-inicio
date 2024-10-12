@@ -58,3 +58,13 @@ def get_items():
 if __name__ == '__main__':
     create_table()
     app.run(debug=True)
+
+
+"""
+100.20.92.101
+44.225.181.72
+44.227.217.144
+
+http://<sua-url-render>/
+http://44.227.217.144/
+"""
