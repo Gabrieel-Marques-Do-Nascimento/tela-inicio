@@ -116,7 +116,7 @@ nav {
   background-size: 190px;
   border-radius: 50%;
   animation-name: move, scale, rotate;
-  animation-duration: 3s, 3s, 3s;
+  animation-duration: 2.9s, 2.9s, 2.9s;
   animation-iteration-count: infinite, infinite, infinite;
   animation-timing-function: ease-in-out, linear, linear; /*suave efeect  */
   transform-style: preserve-3d;
@@ -135,7 +135,7 @@ nav {
   z-index: 6;
   background-color: white;
   animation-name: move_mum, scale_mum, rotate_mum;
-  animation-duration: 2s, 2s, 2s;
+  animation-duration: 1.09s, 1.09s, 1.09s;
   animation-iteration-count: infinite, infinite, infinite;
   animation-timing-function: ease-in-out, linear, linear;
   box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.7); /* Luz ao redor */
