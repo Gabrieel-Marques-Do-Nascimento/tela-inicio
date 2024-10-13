@@ -1,8 +1,6 @@
-
-
 /* Ajustes para telas menores (mobile) */
 @media (max-width: 600px) {
-  body{
+  body {
     width: auto;
   }
   header {
@@ -19,19 +17,15 @@
     font-size: 18px;
   }
   .amd {
-
     left: 70%;
     margin: 0;
     padding: 0;
     position: absolute;
-  text-decoration: underline;
-
+    text-decoration: underline;
   }
-  .horas{
- 
+  .horas {
     left: 110%;
     position: relative;
-  
   }
   .data {
     position: static;
@@ -45,7 +39,7 @@
     width: 100%;
     max-width: 250px;
   }
-  
+
   /* Menu mobile */
   .menu {
     display: flex;
@@ -62,7 +56,6 @@
     font-size: 1em;
   }
 
-
   /* Ajustes no conteúdo principal */
   .container {
     padding: 15px;
@@ -76,5 +69,4 @@
   .carregar h1 {
     font-size: 1.5em;
   }
-
 }

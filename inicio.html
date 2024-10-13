@@ -1,183 +1,172 @@
 <!DOCTYPE html>
 <!-- saved from url=(0081)https://gabrieel-marques-do-nascimento.github.io/Web__Exemple/css/TELA%20INICIAL/ -->
-<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-            
-            <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-            <title>inicio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-            <!-- ideia add meus link direto da pagina com js -->
-            <style></style>
+    <title>inicio</title>
 
-            <!-- Custom Styles -->
-            <link rel="stylesheet" href="style.css">
-            <link rel="stylesheet" href="mobal.css">
-            <link rel="stylesheet" href="./inicio_files/css2">
-      <style type="text/css" id="operaUserStyle">
-  video {
-    filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(0.75 calc(env(-opera-gx-accent-color-r)/255) calc(env(-opera-gx-accent-color-g)/255) calc(env(-opera-gx-accent-color-b)/255)));
-  }
-</style></head>
+    <!-- ideia add meus link direto da pagina com js -->
+    <style></style>
 
-      <body onload="time()">
-            <header>
-                  <h1>Dev Junior</h1>
-                  <div class="data" id="data"><span class="horas">19:33:02</span>  <span class="amd"> 23/3/2024</span></div>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobal.css" />
+    <link rel="stylesheet" href="./inicio_files/css2" />
+    <style type="text/css" id="operaUserStyle">
+      video {
+        filter: -opera-shader(
+          url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(
+              0.75 calc(env(-opera-gx-accent-color-r) / 255)
+                calc(env(-opera-gx-accent-color-g) / 255)
+                calc(env(-opera-gx-accent-color-b) / 255)
+            )
+        );
+      }
+    </style>
+  </head>
 
-                  <script>
-                        let hora1 = "",
-                              min1 = "",
-                              seg1 = "";
-                        function time() {
-                              data = new Date();
+  <body onload="time()">
+    <header>
+      <h1>Dev Junior</h1>
+      <div class="data" id="data">
+        <span class="horas">19:33:02</span> <span class="amd"> 23/3/2024</span>
+      </div>
 
-                              ano = data.getFullYear();
-                              mes = data.getMonth() + 1;
-                              dia = data.getDate();
-                              ho = data.getHours();
-                              mi = data.getMinutes();
-                              seg = data.getSeconds();
+      <script>
+        let hora1 = "",
+          min1 = "",
+          seg1 = "";
+        function time() {
+          data = new Date();
 
+          ano = data.getFullYear();
+          mes = data.getMonth() + 1;
+          dia = data.getDate();
+          ho = data.getHours();
+          mi = data.getMinutes();
+          seg = data.getSeconds();
 
+          document.querySelector("#data").innerHTML =
+            '<span class="horas">' +
+            ho.toString().padStart(2, "0") +
+            ":" +
+            mi.toString().padStart(2, "0") +
+            ":" +
+            seg.toString().padStart(2, "0") +
+            '</span>  <span  class="amd"> ' +
+            dia.toString().padStart(2, "0") +
+            "/" +
+            mes.toString().padStart(2, "0") +
+            "/" +
+            ano.toString().padStart(2, "0") +
+            "</span>";
+          setTimeout("time()", 500);
+        }
+      </script>
 
-                              document.querySelector("#data").innerHTML =
-                                    '<span class="horas">' +
-                                    ho.toString().padStart(2, '0') +
-                                    ":" +
-                                    mi.toString().padStart(2, '0') +
-                                    ":" +
-                                    seg.toString().padStart(2, '0') +
-                                    '</span>  <span  class="amd"> ' +
-                                    dia.toString().padStart(2, '0') +
-                                    "/" +
-                                    mes.toString().padStart(2, '0') +
-                                    "/" +
-                                    ano.toString().padStart(2, '0') +
-                                    "</span>";
-                              setTimeout("time()", 500);
-                        }
-                  </script>
+      <div class="pesquisa">
+        <input type="search" name="google" id="google" />
+        <a class="pesquisar" onclick="pesq()">
+          <img src="./inicio_files/lupa.svg" alt="lupa.svg" />
+        </a>
+      </div>
 
-                  <div class="pesquisa">
-                        <input type="search" name="google" id="google">
-                        <a class="pesquisar" onclick="pesq()">
-                              <img src="./inicio_files/lupa.svg" alt="lupa.svg">
-                        </a>
-                  </div>
+      <script>
+        const inpute = document.querySelector("#google");
 
-                  <script>
-                        const inpute = document.querySelector("#google");
+        function pesq() {
+          location.href = `https://www.google.com/search?q=${inpute.value}&`;
+        }
+        // botao de enter do pc
+        document.addEventListener("keypress", function (event) {
+          if (event.key === "Enter") {
+            location.href = `https://www.google.com/search?q=${inpute.value}&`;
+            // Ações a serem executadas quando o Enter for pressionado
+          }
+        });
 
-                        function pesq() {
-                              location.href = `https://www.google.com/search?q=${inpute.value}&`;
-                        }
-                        // botao de enter do pc
-                        document.addEventListener("keypress", function (event) {
-                              if (event.key === "Enter") {
-                                    location.href = `https://www.google.com/search?q=${inpute.value}&`;
-                                    // Ações a serem executadas quando o Enter for pressionado
-                              }
-                        });
-                        
-                        // keyup botao de enter do celular 
-                        document.addEventListener("keyup", function (event) {
-                              if (event.key === "Enter") {
-                                    location.href = `https://www.google.com/search?q=${inpute.value}&`;
-                                    // Ações a serem executadas quando o Enter for pressionado
-                              }
-                        });
-                        
-                        
-                        
+        // keyup botao de enter do celular
+        document.addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            location.href = `https://www.google.com/search?q=${inpute.value}&`;
+            // Ações a serem executadas quando o Enter for pressionado
+          }
+        });
+      </script>
+    </header>
 
+    <div class="carregar">
+      <h1>Hello world</h1>
+    </div>
 
-                  </script>
-            </header>
+    <div class="anime">
+      <!--animation anime-->
+    </div>
 
-            <div class="carregar">
-                  <h1>Hello world</h1>
-            </div>
+    <div class="lenbret">
+      <lenbret></lenbret>
+    </div>
 
-            <div class="anime">
-                  <!--animation anime-->
-            </div>
+    <div class="container">
+      <div class="sol"></div>
+      <div class="terra">
+        <div class="lua"></div>
+      </div>
+      <nav class="menu">
+        <span style="--i: 90deg; --d: 2; --x: 2; --y: 3; --x2: 1; --y2: -2.6">
+          <a href="https://www.facebook.com/gabiel.marques.98?mibextid=ZbWKwL"
+            >facebook</a
+          ></span
+        >
+        <span
+          style="--i: 90deg; --d: 2.5; --x: 2; --y: 0.5; --x2: 1; --y2: -1.8"
+        >
+          <a
+            href="https://instagram.com/gabriel_marques_0.000001?igshid=YTQwZjQ0NmI0OA=="
+            >instagram</a
+          ></span
+        >
+        <span style="--i: 90deg; --d: 3; --x: 2; --y: -2; --x2: 0; --y2: -1">
+          <a href="https://www.youtube.com/@BIEL_MARQUES_02">youtube</a></span
+        >
+        <span style="--i: 0; --d: 3; --x: 0; --y: 0; --x2: 0; --y2: 1.2">
+          <a href="https://github.com/Gabrieel-Marques-Do-Nascimento"
+            >github</a
+          ></span
+        >
+        <span style="--i: 0; --d: 2.5; --x: 2; --y: 0; --x2: 0.5; --y2: 1.9">
+          <a href="maito:gabrielmarquesnascimentob@gmail.com">E-mail</a></span
+        >
+        <span style="--i: 0; --d: 2; --x: 4; --y: 0; --x2: 0; --y2: 2.7">
+          <a href="https://www.linkedin.com/in/gabriel-marques-671795276"
+            >Linkedin</a
+          ></span
+        >
+      </nav>
+      <span class="close" style="--i: 0; --x: 3; --y: 0; --x2: 0; --y2: 0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+            d="M368 368L144 144M368 144L144 368"
+          ></path>
+        </svg>
+      </span>
+    </div>
 
-            <div class="lenbret">
-                  <lenbret></lenbret>
-            </div>
-
-            <div class="container">
-                  <div class="sol"></div>
-                  <div class="terra">
-                        <div class="lua"></div>
-                  </div>
-                  <nav class="menu">
-                        <span style="
-                                    --i: 90deg;
-                                    --d: 2;
-                                    --x: 2;
-                                    --y: 3;
-                                    --x2: 1;
-                                    --y2: -2.6;
-                              ">
-                              <a href="https://www.facebook.com/gabiel.marques.98?mibextid=ZbWKwL">facebook</a></span>
-                        <span style="
-                                    --i: 90deg;
-                                    --d: 2.5;
-                                    --x: 2;
-                                    --y: 0.5;
-                                    --x2: 1;
-                                    --y2: -1.8;
-                              ">
-                              <a href="https://instagram.com/gabriel_marques_0.000001?igshid=YTQwZjQ0NmI0OA==">instagram</a></span>
-                        <span style="
-                                    --i: 90deg;
-                                    --d: 3;
-                                    --x: 2;
-                                    --y: -2;
-                                    --x2: 0;
-                                    --y2: -1;
-                              ">
-                              <a href="https://www.youtube.com/@BIEL_MARQUES_02">youtube</a></span>
-                        <span style="
-                                    --i: 0;
-                                    --d: 3;
-                                    --x: 0;
-                                    --y: 0;
-                                    --x2: 0;
-                                    --y2: 1.2;
-                              ">
-                              <a href="https://github.com/Gabrieel-Marques-Do-Nascimento">github</a></span>
-                        <span style="
-                                    --i: 0;
-                                    --d: 2.5;
-                                    --x: 2;
-                                    --y: 0;
-                                    --x2: 0.5;
-                                    --y2: 1.9;
-                              ">
-                              <a href="maito:gabrielmarquesnascimentob@gmail.com">E-mail</a></span>
-                        <span style="
-                                    --i: 0;
-                                    --d: 2;
-                                    --x: 4;
-                                    --y: 0;
-                                    --x2: 0;
-                                    --y2: 2.7;
-                              ">
-                              <a href="https://www.linkedin.com/in/gabriel-marques-671795276">Linkedin</a></span>
-                  </nav>
-                  <span class="close" style="--i: 0; --x: 3; --y: 0; --x2: 0; --y2: 0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
-                        </svg>
-                  </span>
-            </div>
-
-
-            <script>
-                  /*
+    <script>
+      /*
   let menu = document.querySelector('.menu');
   let close = document.querySelector('.close');
   close.onclick = function() {
@@ -188,129 +177,112 @@
   };
   */
 
-                  let navigation = document.querySelector(".menu");
-                  let close = document.querySelector(".close");
-                  navigation.onclick = function () {
-                        navigation.classList.add("ativo");
-                  };
-                  close.onclick = function () {
-                        navigation.classList.remove("ativo");
-                  };
-            </script>
-            <style>
-                  .menu {
-                  }
-                  .menu span {
-                        display: flex;
-                        border-radius: 5px;
-                        transition: width 2.5s, transform 2.5s, padding 3.5s;
+      let navigation = document.querySelector(".menu");
+      let close = document.querySelector(".close");
+      navigation.onclick = function () {
+        navigation.classList.add("ativo");
+      };
+      close.onclick = function () {
+        navigation.classList.remove("ativo");
+      };
+    </script>
+    <style>
+      .menu {
+      }
+      .menu span {
+        display: flex;
+        border-radius: 5px;
+        transition: width 2.5s, transform 2.5s, padding 3.5s;
 
-                        align-items: center;
-                        justify-content: center;
-                        position: absolute;
-                        background: white;
-                        font-size: 0px;
-                        padding: 20px 1px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: white;
+        font-size: 0px;
+        padding: 20px 1px;
 
-                        width: 2px;
-                        height: 2px;
-                        transition: width calc(1.5s * var(--d)),
-                              height calc(1.5s var(--d));
-                        transform: translate(
-                                    calc(8px * var(--x)),
-                                    calc(8px * var(--y))
-                              )
-                              rotate(var(--i));
-                  }
+        width: 2px;
+        height: 2px;
+        transition: width calc(1.5s * var(--d)), height calc(1.5s var(--d));
+        transform: translate(calc(8px * var(--x)), calc(8px * var(--y)))
+          rotate(var(--i));
+      }
 
-                  .menu.ativo span {
-                        z-index: 2;
-                        color: black;
-                        font-size: 16px;
-                        padding: 4px;
+      .menu.ativo span {
+        z-index: 2;
+        color: black;
+        font-size: 16px;
+        padding: 4px;
 
-                        transform: translate(
-                                    calc(10px * var(--x2)),
-                                    calc(60px * var(--y2))
-                              )
-                              rotate(0);
-                        width: auto;
-                        height: auto;
+        transform: translate(calc(10px * var(--x2)), calc(60px * var(--y2)))
+          rotate(0);
+        width: auto;
+        height: auto;
 
-                        animation: calc(0.3s * var(--d)) rotat ease-in-out;
-                        & > a {
-                              font-size: 16px;
-                        }
-                  }
+        animation: calc(0.3s * var(--d)) rotat ease-in-out;
+        & > a {
+          font-size: 16px;
+        }
+      }
 
-                  .menu span a {
-                        text-decoration: none;
-                        font-size: 0;
-                        color: darkblue;
-                        font-weight: 600;
-                  }
-                  .menu span:hover,
-                  .menu ~ .close:hover {
-                        filter: drop-shadow(0 0 3px blue)
-                              drop-shadow(0 0 6px blue)
-                              drop-shadow(0 0 18px blue);
-                        transition: 0.5s, width 3s, height 3s;
-                        color: darkblue;
-                        font-weight: 900;
-                  }
-                  .menu.ativo ~ .close {
-                        z-index: 1;
-                        color: darkred;
-                        filter: drop-shadow(0 0 3px red)
-                              drop-shadow(0 0 6px red) drop-shadow(0 0 18px red)
-                              drop-shadow(0 0 36px red);
-                        transition: color 2s, filter 2s linear;
-                  }
+      .menu span a {
+        text-decoration: none;
+        font-size: 0;
+        color: darkblue;
+        font-weight: 600;
+      }
+      .menu span:hover,
+      .menu ~ .close:hover {
+        filter: drop-shadow(0 0 3px blue) drop-shadow(0 0 6px blue)
+          drop-shadow(0 0 18px blue);
+        transition: 0.5s, width 3s, height 3s;
+        color: darkblue;
+        font-weight: 900;
+      }
+      .menu.ativo ~ .close {
+        z-index: 1;
+        color: darkred;
+        filter: drop-shadow(0 0 3px red) drop-shadow(0 0 6px red)
+          drop-shadow(0 0 18px red) drop-shadow(0 0 36px red);
+        transition: color 2s, filter 2s linear;
+      }
 
-                  .close {
-                        position: absolute;
-                        padding: 20px 1px;
-                        background: white;
-                        color: black;
+      .close {
+        position: absolute;
+        padding: 20px 1px;
+        background: white;
+        color: black;
 
-                        width: 2px;
-                        height: 2px;
+        width: 2px;
+        height: 2px;
 
-                        font-size: 0;
-                        border-radius: 0;
-                        transition: width 2s, height 2s, font-size 2s,
-                              border-radius 3s;
-                  }
+        font-size: 0;
+        border-radius: 0;
+        transition: width 2s, height 2s, font-size 2s, border-radius 3s;
+      }
 
-                  .menu.ativo ~ .close {
-                        display: grid;
-                        border-radius: 50%;
-                        place-items: center;
-                        font-family: "Times New Roman", Times, serif;
+      .menu.ativo ~ .close {
+        display: grid;
+        border-radius: 50%;
+        place-items: center;
+        font-family: "Times New Roman", Times, serif;
 
-                        font-size: 19px;
-                        padding: 4px;
-                        width: 40px;
-                        height: 40px;
-                  }
-                  @keyframes rotat {
-                        0% {
-                              transform: rotate(0deg)
-                                    translate(
-                                          calc(0px * var(--x2)),
-                                          calc(0px * var(--y2))
-                                    );
-                        }
-                        100% {
-                              transform: rotate(360deg)
-                                    translate(
-                                          calc(10px * var(--x2)),
-                                          calc(60px * var(--y2))
-                                    );
-                        }
-                  }
-            </style>
-            <footer></footer>
-      
-
-</body></html>
+        font-size: 19px;
+        padding: 4px;
+        width: 40px;
+        height: 40px;
+      }
+      @keyframes rotat {
+        0% {
+          transform: rotate(0deg)
+            translate(calc(0px * var(--x2)), calc(0px * var(--y2)));
+        }
+        100% {
+          transform: rotate(360deg)
+            translate(calc(10px * var(--x2)), calc(60px * var(--y2)));
+        }
+      }
+    </style>
+    <footer></footer>
+  </body>
+</html>
