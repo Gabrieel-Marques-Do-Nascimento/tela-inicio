@@ -1,44 +1,12 @@
-/* Estilos gerais para mobile */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  background-color: #333;
-  color: #fff;
-}
-
-h1 {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-.pesquisa {
-  display: flex;
-  align-items: center;
-}
-
-.pesquisa input[type="search"] {
-  width: 150px;
-  padding: 5px;
-}
-
-.pesquisar img {
-  width: 20px;
-  height: 20px;
-}
 
 /* Ajustes para telas menores (mobile) */
 @media (max-width: 600px) {
+  body{
+    width: auto;
+  }
   header {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
   }
 
   .pesquisa {
@@ -46,9 +14,33 @@ h1 {
   }
 
   h1 {
-    font-size: 1.2em;
+    margin: 0%;
+    padding: 0%;
+    font-size: 18px;
   }
+  .amd {
 
+    left: 70%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  text-decoration: underline;
+
+  }
+  .horas{
+ 
+    left: 110%;
+    position: relative;
+  
+  }
+  .data {
+    position: static;
+    font-size: 16px;
+  }
+  .data * {
+    padding: 0%;
+    margin: 0%;
+  }
   .pesquisa input[type="search"] {
     width: 100%;
     max-width: 250px;
@@ -70,17 +62,19 @@ h1 {
     font-size: 1em;
   }
 
+
   /* Ajustes no conteúdo principal */
   .container {
     padding: 15px;
   }
 
-  .sol, .terra, .lua {
+  /* .sol, .terra, .lua {
     width: 100px;
     height: 100px;
-  }
+  } */
 
   .carregar h1 {
     font-size: 1.5em;
   }
+
 }
