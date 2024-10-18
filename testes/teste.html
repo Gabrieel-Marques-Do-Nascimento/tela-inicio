@@ -1,117 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orbital Simulation</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Div Example</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-
-body {
-  margin: 0;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
+ /* Estilo da div de fundo */
+.background {
+    position: fixed;  /* Fixa a div no fundo, mesmo com o scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00f0f7;  /* Cor de fundo */
+    z-index: -1;  /* Envia a div para trás do conteúdo */
 }
 
-.solar-system {
-  position: relative;
-  width: 500px;
-  height: 500px;
+/* Estilo do conteúdo principal */
+.content1 {
+  background: blue;
+    position: relative;
+    z-index: 1;  /* Garante que o conteúdo fique na frente */
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
-
-.sun {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
+.content {
+  background: blue;
 }
-
-.earth-orbit {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: 300px;
-  border: 1px dashed #ffffff;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: rotate-earth 10s linear infinite;
-}
-
-.earth {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  background-color: blue;
-  border-radius: 50%;
-  transform: translateX(-50%);
-}
-
-.moon-orbit {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  border: 1px dashed #ffffff;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: rotate-moon 2s linear infinite;
-}
-
-.moon {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  background-color: grey;
-  border-radius: 50%;
-  transform: translateX(-50%);
-}
-
-@keyframes rotate-earth {
-  from { transform: rotate(0deg) translate(-50%, -50%); }
-  to { transform: rotate(360deg) translate(-50%, -50%); }
-}
-
-@keyframes rotate-moon {
-  from { transform: rotate(0deg) translate(-50%, -50%); }
-  to { transform: rotate(360deg) translate(-50%, -50%); }
-}
-
 </style>
 <body>
-  <div class="solar-system">
-    <div class="sun"></div>
-    <div class="earth-orbit">
-      <div class="earth">
-        <div class="moon-orbit">
-          <div class="moon"></div>
-        </div>
-      </div>
+    <div class="background"></div>
+    <div class="content">
+        <h1>Conteúdo do site</h1>
+        <p>Este é um exemplo de conteúdo por cima da div de fundo.</p>
     </div>
-  </div>
-  
-  <script>
-// Neste caso simples, o CSS já lida com as animações usando @keyframes.
-// O JavaScript pode ser usado para controles adicionais, como pausar, reiniciar, ou ajustar velocidade se necessário.
-
-// Exemplo de ajuste dinâmico da velocidade com JavaScript:
-document.querySelector('.earth-orbit').style.animationDuration = '15s';
-
-
-  </script>
 </body>
 </html>
