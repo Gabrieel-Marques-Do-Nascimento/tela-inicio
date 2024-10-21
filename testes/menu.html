@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Lista de Textos</title>
+    <style>
+        .close {
+            width: 20px;
+            left: 0;
+            transform: rotate(40deg);
+            bottom: 320px;
+}
+    </style>
+    <script>
+        function saveText() {
+            // Pega o texto da área de texto
+            const text = document.getElementById('textArea').value;
+            
+            // Recupera a lista de textos já existente do LocalStorage
+            let savedTexts = JSON.parse(localStorage.getItem('savedTexts')) || [];
+            
+            // Adiciona o novo texto à lista
+            savedTexts.push(text);
+            
+            // Salva a lista atualizada no LocalStorage (convertida para JSON)
+            localStorage.setItem('savedTexts', JSON.stringify(savedTexts));
+
+            // Atualiza a lista na página
+            updateTextList();
+        }
+
+        function loadText() {
+            // Carrega a lista de textos salvo do LocalStorage, se existir
+            let savedTexts = JSON.parse(localStorage.getItem('savedTexts')) || [];
+            
+            // Atualiza a lista na página
+            updateTextList();
+        }
+
+        function updateTextList() {
+            // Recupera a lista de textos
+            const savedTexts = JSON.parse(localStorage.getItem('savedTexts')) || [];
+            const listElement = document.getElementById('textList');
+            
+            // Limpa a lista atual
+            listElement.innerHTML = '';
+
+            // Adiciona os textos à lista como itens de uma lista não ordenada
+            savedTexts.forEach((text, index) => {
+                const li = document.createElement('li');
+                li.textContent = `Texto ${index + 1}: ${text}`;
+                listElement.appendChild(li);
+            });
+        }
+
+        // Chama a função para carregar os textos ao abrir a página
+        window.onload = loadText;
+    </script>
+</head>
+<body>
+
+    <h1>Leitor de Lista de Textos</h1>
+    <textarea id="textArea" rows="5" cols="50"></textarea>
+    <br>
+    <button onclick="saveText()">Salvar Texto</button>
+
+    <h2>Textos Salvos</h2>
+    <ul id="textList">
+        <!-- A lista de textos será exibida aqui -->
+    </ul>
+    <nav class="menu">
+        <span>add</span>
+    </nav> 
+           <span class="close" style="--i: 0; --x: 3; --y: 0; --x2: 0; --y2: 0">
+                X
+          </span>
+</body>
+</html>
