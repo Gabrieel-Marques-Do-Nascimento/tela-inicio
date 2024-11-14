@@ -2,7 +2,7 @@
 <!-- saved from url=(0081)https://gabrieel-marques-do-nascimento.github.io/Web__Exemple/css/TELA%20INICIAL/ -->
 <html lang="pt-br">
   <head>
-      <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -70,7 +70,7 @@
       </script>
 
       <div class="pesquisa">
-<input type="search" name="google" id="google" aria-label="Search"/>
+        <input type="search" name="google" id="google" aria-label="Search" />
         <a class="pesquisar" onclick="pesq()">
           <img src="./inicio_files/lupa.svg" alt="lupa.svg" />
         </a>
@@ -78,22 +78,30 @@
 
       <script>
         const inpute = document.querySelector("#google");
-
+    
+        // length
         function pesq() {
-          location.href = `https://www.google.com/search?q=${inpute.value}&`;
+          
+          if (inpute.value) {
+            location.href = `https://www.google.com/search?q=${inpute.value}&`;
+          }
         }
         // botao de enter do pc
         document.addEventListener("keypress", function (event) {
-          if (event.key === "Enter") {
-            location.href = `https://www.google.com/search?q=${inpute.value}&`;
+          if (inpute.value) {
+            if (event.key === "Enter") {
+              location.href = `https://www.google.com/search?q=${inpute.value}&`;
+            }
             // Ações a serem executadas quando o Enter for pressionado
           }
         });
 
         // keyup botao de enter do celular
         document.addEventListener("keyup", function (event) {
-          if (event.key === "Enter") {
-            location.href = `https://www.google.com/search?q=${inpute.value}&`;
+          if (inpute.value) {
+            if (event.key === "Enter") {
+              location.href = `https://www.google.com/search?q=${inpute.value}&`;
+            }
             // Ações a serem executadas quando o Enter for pressionado
           }
         });
@@ -124,7 +132,7 @@
           ></span
         >
         <span
-          style="--i: 90deg; --d: 2.5; --x: 2; --y: .1; --x2: 1; --y2: -1.8"
+          style="--i: 90deg; --d: 2.5; --x: 2; --y: 0.1; --x2: 1; --y2: -1.8"
         >
           <a
             href="https://instagram.com/gabriel_marques_0.000001?igshid=YTQwZjQ0NmI0OA=="
